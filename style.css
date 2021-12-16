@@ -1,0 +1,322 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    /* width: 70%; */
+    background: rgb(253, 252, 252);
+    letter-spacing: 3px;
+    line-height: 0.5rem;
+    font-family: "Arial", Times, serif ; 
+}
+
+
+/* main heading */
+
+.heading-container {
+    padding-bottom: 50rem;
+    width: 100%;
+    height: auto;
+    background-image: url('./images/background-img.png');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
+
+.heading {
+    
+    background-color: #00000070;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    
+}
+
+
+.heading-left {
+    float: left;  
+    width: 50%;
+}
+
+
+
+.main-heading {
+    position: absolute;
+    font-size: 40px;
+    color:#fff;
+    font-weight: 700;
+    margin: 30px 20px;
+
+
+}
+
+.sub-heading {
+    position: absolute;
+    top: 54%;
+    padding-left: 3rem;
+    font-size: 25px;
+    color:#fff;
+    font-weight: 700;
+
+}
+
+/* fixing pointer  position */
+
+.pointer-image {
+    left: 167px;
+    position: relative;
+    top: 24px;
+}
+
+
+/* other half of the navbar */
+
+.heading-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly; 
+    /* padding-bottom: 10px;  */
+}
+
+
+
+.headingcontainer .heading-right {
+    float: right;
+}
+
+
+
+
+.searchContainer {
+    display: inline-flex;
+    margin: 1.5rem 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.searchBox {
+    border: 2px solid black;
+    border-right:none;
+    background:white;
+    border-radius: 3px;
+
+}
+
+.searchIcon {
+    padding: 10px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 3px;
+    background: white;
+}
+
+
+
+.heading-right .popular {
+    margin: 2rem 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 2px solid rgb(253, 251, 249);
+    color: #fff;
+    font-size: 2rem;
+    
+}
+
+.heading-right .new {
+    margin: 2rem 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 2px solid rgb(253, 251, 249);
+    color: #fff;
+    font-size: 2rem;
+    
+}
+
+
+/* popular shows */
+
+section {
+    
+    background-color:#C1BDBD;
+    
+}
+
+.shows-heading {
+    font-size: 40px;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    text-align: center;
+    
+}
+
+hr {
+    color:#F5F5F5;
+    width: 60%;
+}
+
+
+/* movieslists */
+
+.movieslists .movies .movie-row{
+    
+    padding: 4rem 14rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    position: relative;
+
+}
+
+.movie .image {
+    height: 23rem;
+    width: 17rem;
+    border-radius: 5px;
+}
+
+.movietitle {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    margin-bottom: 4px;
+}
+
+
+.movie .heart-icon {
+    position: absolute;
+    top: 0.8rem;
+    right: 2.8rem;   
+}
+
+.movie .ratingbutton {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.staricon .rating {
+    font-size: 1.2rem;
+    padding-right: 0.8rem;
+}
+
+button {
+    width: 40%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+.button .playbutton {
+    color: white;
+}
+
+
+/* footer */
+
+.footer {
+    
+    border-top: 1px solid #F5F5F5;
+    padding: 1px;
+    background-color:#C1BDBD;
+}
+
+.footer-details {
+    
+    font-size: 15px;
+    color:black;
+    font-weight: 700;
+    margin: 30px 20px;
+}
+
+.footer-heading {
+    position: absolute;
+}
+
+.footer-details p {
+    padding-left: 32px;
+    top: 40px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+.footer-details img {
+    left: 120px;
+    top: -14px;
+    position: relative;
+}
+
+
+
+@media screen  and (max-width : 600px) {
+   
+
+
+    
+    
+
+
+
+
+
+
+
+    .movieslists .movies .movie-row {
+        flex-direction: column;
+        justify-content: space-between;
+    }   
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
