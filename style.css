@@ -1,33 +1,25 @@
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-
 body {
-    display: flex;
-    flex-direction: column;
+    
+    margin: 0;
+    padding-left: 0;
     width: 100%;
-    min-height: 100vh;
-    /* width: 70%; */
-    background: rgb(253, 252, 252);
-    letter-spacing: 3px;
-    line-height: 0.5rem;
-    font-family: "Arial", Times, serif ; 
+    min-height: 80vh;
+    background-color: #C1BDBD;
 }
 
 
 /* main heading */
 
 .heading-container {
-    padding-bottom: 50rem;
+
     width: 100%;
     height: auto;
-    background-image: url('./images/background-img.png');
-    background-repeat: no-repeat;
+    position: absolute;
     /* background-size: contain; */
+}
+.background img {
+    width: 100%;
 }
 
 .heading {
@@ -50,19 +42,18 @@ body {
 .main-heading {
     position: absolute;
     font-size: 40px;
-    color:#fff;
+    color: #fff;
     font-weight: 700;
-    margin: 30px 20px;
-
-
+    left: 15px;
+    bottom: 17px;
 }
 
 .sub-heading {
     position: absolute;
-    top: 54%;
-    padding-left: 3rem;
-    font-size: 25px;
-    color:#fff;
+    top: 31%;
+    font-size: 27px;
+    color: #fff;
+    left: 54px;
     font-weight: 700;
 
 }
@@ -70,9 +61,10 @@ body {
 /* fixing pointer  position */
 
 .pointer-image {
-    left: 167px;
+    left: 166px;
     position: relative;
-    top: 24px;
+    top: 16px;
+    width: 5%;
 }
 
 
@@ -82,7 +74,6 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-evenly; 
-    /* padding-bottom: 10px;  */
 }
 
 
@@ -96,21 +87,18 @@ body {
 
 .searchContainer {
     display: inline-flex;
-    margin: 1.5rem 1.5rem;
-    padding: 0.5rem;
     border-radius: 10px;
+    padding: 35px;
 }
 
 .searchBox {
-    border: 2px solid black;
-    border-right:none;
-    background:white;
-    border-radius: 3px;
+    background: transparent;
+    border-radius: 10px;
+    height: 35px;
 
 }
 
 .searchIcon {
-    padding: 10px;
     border: 2px solid black;
     border-left: none;
     border-radius: 3px;
@@ -120,9 +108,7 @@ body {
 
 
 .heading-right .popular {
-    margin: 2rem 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
     border-bottom: 2px solid rgb(253, 251, 249);
     color: #fff;
     font-size: 2rem;
@@ -130,9 +116,6 @@ body {
 }
 
 .heading-right .new {
-    margin: 2rem 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     border-bottom: 2px solid rgb(253, 251, 249);
     color: #fff;
     font-size: 2rem;
@@ -142,7 +125,9 @@ body {
 
 /* popular shows */
 
-section {
+
+
+ #samebackground {
     
     background-color:#C1BDBD;
     
@@ -150,9 +135,6 @@ section {
 
 .shows-heading {
     font-size: 40px;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 0.2rem;
     width: 100%;
     text-align: center;
     
@@ -161,23 +143,29 @@ section {
 hr {
     color:#F5F5F5;
     width: 60%;
+    
 }
 
 
 /* movieslists */
 
-.movieslists .movies .movie-row{
-    
-    padding: 4rem 14rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.movieslists {
+    margin:0;
+}
+
+.movie-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding:0;
+    width: 90%;
+    margin: 50px auto;
 }
 
 .movie {
-    padding-right: 3rem;
-    padding-left: 3rem;
     position: relative;
+    width: 300px;
+    float: left;
 
 }
 
@@ -190,15 +178,13 @@ hr {
 .movietitle {
     font-size: 20px;
     letter-spacing: 1px;
-    margin-top: 1rem;
-    margin-bottom: 4px;
 }
 
 
 .movie .heart-icon {
     position: absolute;
-    top: 0.8rem;
-    right: 2.8rem;   
+    top: 0.7rem;
+    right: 2rem;   
 }
 
 .movie .ratingbutton {
@@ -210,16 +196,15 @@ hr {
 
 .staricon .rating {
     font-size: 1.2rem;
-    padding-right: 0.8rem;
 }
 
 button {
+    padding: 1px;
     width: 40%;
-    padding: 10px 10px;
-    margin: 10px 10px;
     color: #fff;
     background-color: black;
     border-radius: 10px;
+    margin: 20px;
     
 }
 
@@ -233,7 +218,6 @@ button {
 .footer {
     
     border-top: 1px solid #F5F5F5;
-    padding: 1px;
     background-color:#C1BDBD;
 }
 
@@ -242,7 +226,6 @@ button {
     font-size: 15px;
     color:black;
     font-weight: 700;
-    margin: 30px 20px;
 }
 
 .footer-heading {
@@ -250,40 +233,111 @@ button {
 }
 
 .footer-details p {
-    padding-left: 32px;
-    top: 40px;
+
+    top: 45px;
     position: relative;
     font-size: 20px;
     font-family: 'Arial';
+    left: 25px;
 }
 
 .footer-details img {
     left: 120px;
     top: -14px;
+    width: 3%;
     position: relative;
 }
 
-
-
-@media screen  and (max-width : 600px) {
-   
-
+@media screen and (max-width: 1000) {
+    .movie-row {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin: 44px auto;
+        padding-left: 19px;
+    }
 
     
-    
-
-
-
-
-
-
-
-    .movieslists .movies .movie-row {
-        flex-direction: column;
-        justify-content: space-between;
-    }   
 }
+
+
+@media screen and (max-width: 800px) { 
+    .heading-right {
+        width:12%;
+        border-bottom: 1px solid rgb(253, 251, 249);
+        font-size: 1.5rem;
+    }
+
+    .heading-right .popular {
+        padding-right: 15px;
+
+    }
+
+    .movieslists {
+        width: 0px;
+        padding-left: 40px;
+    }
+    .movie-row {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 40px;
+    }
+
+    .footer-heading {
+        left: 10px;
+    }
+
+    .footer-details p {
+        left: 0px;
+        padding-left: 35px;
+    }
     
+}
+
+
+@media screen  and (max-width : 500px) {
+     .movie-row {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .main-heading{
+        font-size: 16px;
+        bottom: 37px;
+    }
+    .sub-heading {
+        top: 4%;
+        font-size: 17px;
+        left: 25px;
+    }
+    .heading-right .popular{
+        font-size: 15px;
+        margin-left: 7%;
+        margin-bottom: 42%;
+        position: absolute;
+        margin-top: 1%;
+    }
+    .heading-right .new{
+        font-size: 15px;
+        margin-left: 34%;
+        position: absolute;
+        margin-top: 1%;
+    }
+    .searchBox{
+        height: 28px;
+        position: absolute;
+        top: 1%;
+        left: 29%;
+    }
+    .pointer-image{
+        left: 75px;
+        top: 7px;
+        width: 7%;
+    }
+    .movie{
+        left: 16%;
+    }
+    .footer-details p{
+        left: 0px;
+    }
+}
 
 
 
@@ -320,3 +374,10 @@ button {
 
 
 
+
+
+
+
+
+
+ */ */
